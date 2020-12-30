@@ -1,3 +1,13 @@
+import cv2
+import numpy as np
+from matplotlib import pyplot as p
+
+img= cv2.imread('flower.jpeg',0)
+print(img.shape)
+
+cv2.imshow("original",img)
+
+
 def hist_stretch(img_2):
 
   #histogram stretching
@@ -12,3 +22,8 @@ for i in range(0,rows):
 for j in range(0,cols):
 img3[i,j] = 255*(img3[i,j]-min)/(max-min)
 return img3
+
+cv2.imshow(img)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
