@@ -16,7 +16,7 @@ height, width, _ = img_bgr.shape
       pixel[0] = 255 - pixel[0]
       pixel[1] = 255 - pixel[1]
       pixel[2] = 255 - pixel[2]
-      mg_bgr[i, j] = pixel
+      img_bgr[i, j] = pixel
 
 
 # Display the negative transformed image
